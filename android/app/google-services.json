@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "389466164401",
+    "project_id": "dailytaskproject",
+    "storage_bucket": "dailytaskproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389466164401:android:50061b17840fe2aed22690",
+        "android_client_info": {
+          "package_name": "com.example.dailytask"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7LaxAt4IwgP6QREm1K-Th_e2LW1g2MxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
