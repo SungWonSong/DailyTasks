@@ -50,7 +50,7 @@ class UserProvider extends ChangeNotifier {
     try{
       _status = Status.authenticating;
       notifyListeners();
-      await firebaseAuth.signInWithEmailAndPassword(email: email, password: password)
+      await firebaseAuth.signInWithEmailAndPassword(email: email, password: password);
       return 'Success';
     } on FirebaseAuthException catch (e) {
       _status = Status.unauthenticated;

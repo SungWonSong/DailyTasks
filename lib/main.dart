@@ -6,6 +6,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:dailytask/firebase/firebase_user.dart';
 import 'package:dailytask/user/view/authenticationScreen.dart';
 import 'package:dailytask/user/view/homeScreen.dart';
+import 'package:dailytask/common/table_calendar.dart';
+import 'package:intl/intl.dart';
+import 'package:intl/date_symbol_data_local.dart';
 
 // firebase 기본 코드 (필수코드)
 
@@ -14,6 +17,7 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  await initializeDateFormatting('ko_KR', null);
   runApp(MyApp());
 }
 
