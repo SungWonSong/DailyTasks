@@ -79,6 +79,7 @@ class UserProvider extends ChangeNotifier {
       _status = Status.unauthenticated;
     } else {
       _status = Status.authenticated;
+      _user = user;
     }
     notifyListeners();
   }
