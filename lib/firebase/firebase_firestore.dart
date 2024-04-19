@@ -14,6 +14,7 @@ class DataInFireStore {
         task : doc.data()['task'],
         //id외의 data는 doc.data()['명칭']을 사용해야 data를 가져올 수 있다.
         email : email,
+        date: (doc.data()['date'] as Timestamp).toDate(),
       );
     }).toList();
 
@@ -27,7 +28,8 @@ class DataInFireStore {
     DailyTodo newTodo = DailyTodo(
       id: docRef.id,
       task: todo.task,
-      email: todo.email
+      email: todo.email,
+      date: todo.date,
     );
     return newTodo;
   }
